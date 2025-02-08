@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:  hsl(0, 0%, 94%);
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            background-color:  #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid  #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color:  hsl(189, 100%, 50%);
+            color:  white;
+            border: none;
+            border-radius: 0.5px;
+            cursor: pointer;
+        }
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color:  rgb(238, 0, 255);
+            color:  white;
+            border: none;
+            border-radius: 0.5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color:  hwb(0 0% 100%);
+        }
+        input[type="button"]:hover {
+            background-color:  rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <h2>𝘍𝘖𝘙𝘔𝘜𝘓𝘈𝘙𝘐𝘖</h2>
+        <label for="GENERO">GENERO:</label>
+        <input type="text" id="GENERO" name="GENERO", required>
+        <label for="APELLIDO">APELLIDO:</label>
+        <input type="text" id="MUSICA" name="MUSICA" required>
+        <label for="gusto musical">GUSTO MUSICAL:</label>
+        <input type="text" id="gusto musical" name="gusto musical" required>
+        <label for="pasatiempo">PASATIEMPO:</label>     
+        <input type="text" id="pasatiempo" name="pasatiempo" required>
+        <label for="documento">DOCUMENTO:</label>
+        <input type="entero" id="documento" name="documento" required>
+        <label for="EDAD">EDAD:</label>
+        <input type="number" id="EDAD" name="EDAD" required>
+        <input type="submit" value="guardar">
+        <input type="button" value="enviar">
+    </form>
+</body>
+</html>
